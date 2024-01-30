@@ -1,6 +1,10 @@
+
 {
   "include": ["src"],
-  "exclude": ["dist", "node_modules"] /* Include only the src directory */,
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -19,5 +23,5 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-  },
+  }
 }
