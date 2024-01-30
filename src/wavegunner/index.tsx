@@ -9,4 +9,4 @@ const WaveGunner=({ label }: WaveGunnerProps)=> {
     </div>
   );
 }
-export { WaveGunner };
+export default WaveGunner;
