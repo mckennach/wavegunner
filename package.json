@@ -1,0 +1,33 @@
+{
+  "name": "waverunner",
+  "version": "1.0.0",
+  "description": "An audio visualizer",
+  "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "component",
+    "npm"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris McKenna",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  }
+}
