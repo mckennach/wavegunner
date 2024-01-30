@@ -1,2 +1,2 @@
-import WaveGunner from "./wavegunner";
+import WaveGunner from "./components/wavegunner";
 export { WaveGunner };

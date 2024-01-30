@@ -1,6 +1,6 @@
 {
-  "name": "wavegunner",
-  "version": "1.1.5",
+  "name": "wavegunner-react",
+  "version": "1.0.0",
   "description": "An audio visualizer",
   "main": "dist/index.js",
   "files": [
@@ -14,6 +14,10 @@
   },
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "release:major": "npm run build && npm version $(semver $npm_package_version -i major) && npm publish --tag latest",
+    "release:minor": "npm run build && npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
+    "release:patch": "npm run build && npm version $(semver $npm_package_version -i patch) && npm publish --tag latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
