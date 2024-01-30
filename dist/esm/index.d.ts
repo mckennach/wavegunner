@@ -1,1 +1,2 @@
-export declare const test: () => void
+import MyCounter from './components/counter';
+export { MyCounter };
