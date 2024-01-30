@@ -3,7 +3,7 @@ const WaveGunner=(props)=> {
   const {label} = props;
   return (
     <div>
-      <button>{label}</button>
+      <button class="test">{label}</button>
     </div>
   );
 }
