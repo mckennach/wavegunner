@@ -1,7 +1,9 @@
 import React from 'react';
-import { WaveGunnerProps } from '../types';
 
-const WaveGunner=({ label }: WaveGunnerProps)=> {
+
+const WaveGunner=({ label }: {
+  label: string;
+})=> {
   
   return (
     <div>

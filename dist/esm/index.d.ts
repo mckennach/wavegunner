@@ -1,3 +1,2 @@
 import WaveGunner from "./wavegunner";
-
-export { WaveGunner }
+export { WaveGunner };
