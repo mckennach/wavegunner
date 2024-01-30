@@ -1,5 +1,5 @@
 import React from 'react';
-const MyComponent=(props)=> {
+const WaveGunner=(props)=> {
   const {label} = props;
   return (
     <div>
@@ -7,4 +7,4 @@ const MyComponent=(props)=> {
     </div>
   );
 }
-export default MyComponent;
+export { WaveGunner };
