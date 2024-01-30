@@ -1,2 +1,1 @@
-import WaveGunner from "./components/wavegunner";
-export { WaveGunner };
+export declare const test: () => void

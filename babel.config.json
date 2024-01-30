@@ -14,8 +14,11 @@
       }
     ],
     ["@babel/preset-react"],
-    ["@babel/preset-typescript", {
-      "ignoreExtensions": true
-    }]
+    [
+      "@babel/preset-typescript",
+      {
+        "ignoreExtensions": true
+      }
+    ]
   ]
 }

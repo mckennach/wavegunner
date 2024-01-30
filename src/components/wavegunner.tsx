@@ -1,14 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-
-const WaveGunner=({ label }: {
-  label: string;
-})=> {
-  
+const WaveGunner = ({ label }: { label: string }) => {
   return (
     <div>
-      <button className="test">{label}</button>
+      <button className='test'>{label}</button>
     </div>
-  );
+  )
 }
-export default WaveGunner;
+export default WaveGunner
