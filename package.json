@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/mckennach/wavegunner#readme",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel src/index.ts --out-file dist/index.js",
     "prepublishOnly": "npm run build",
     "release:major": "npm run build && npm version $(semver $npm_package_version -i major) && npm publish --tag latest",
     "release:minor": "npm run build && npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
@@ -38,7 +38,12 @@
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/node": "^20.11.10",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "react": ">=18.2.0",
-    "react-dom": ">=18.2.0"
+    "react-dom": ">=18.2.0",
+    "typescript": "^5.3.3"
   }
 }
