@@ -1,10 +1,14 @@
 {
   "name": "wavegunner-react",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An audio visualizer",
-  "main": "dist/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "exports": {
     ".": {
@@ -13,8 +17,12 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+  "prepublishOnly": "npm test && npm run prettier && npm run lint",
     "release:major": "npm run build && npm version $(semver $npm_package_version -i major) && npm publish --tag latest",
     "release:minor": "npm run build && npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
     "release:patch": "npm run build && npm version $(semver $npm_package_version -i patch) && npm publish --tag latest",
@@ -32,7 +40,7 @@
     "npm"
   ],
   "author": "chrapmck",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mckennach/wavegunner/issues"
   },
@@ -59,6 +67,6 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": ">=18.2.0"
   }
 }
