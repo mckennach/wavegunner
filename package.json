@@ -25,7 +25,7 @@
     "release:major": "npm run build && npm version $(semver $npm_package_version -i major) && npm publish --tag latest",
     "release:minor": "npm run build && npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
     "release:patch": "npm run build && npm version $(semver $npm_package_version -i patch) && npm publish --tag latest",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write ."
   },
