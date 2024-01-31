@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-const MyCounter = ({ value = 0 }) => {
-    const [counter, setCounter] = useState(value);
-    const onMinus = () => {
-        setCounter((prev) => prev - 1);
+var MyCounter = function (_a) {
+    var _b = _a.value, value = _b === void 0 ? 0 : _b;
+    var _c = useState(value), counter = _c[0], setCounter = _c[1];
+    var onMinus = function () {
+        setCounter(function (prev) { return prev - 1; });
     };
-    const onPlus = () => {
-        setCounter((prev) => prev + 1);
+    var onPlus = function () {
+        setCounter(function (prev) { return prev + 1; });
     };
     return (React.createElement("div", null,
         React.createElement("h1", null,

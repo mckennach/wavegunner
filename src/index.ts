@@ -1,3 +1,7 @@
 import { WaveGunner } from './components/wavegunner'
 
-export { WaveGunner }
+const test = () => {
+  console.log('test');
+}
+
+export { WaveGunner, test }
