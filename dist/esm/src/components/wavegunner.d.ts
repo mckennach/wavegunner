@@ -1,3 +1,3 @@
-import React from 'react';
-declare const WaveGunner: () => React.JSX.Element;
-export { WaveGunner };
+import React from 'react'
+declare const WaveGunner: () => React.JSX.Element
+export { WaveGunner }

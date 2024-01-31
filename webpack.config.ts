@@ -1,27 +1,24 @@
-import path from "path";
-import { Configuration } from "webpack";
-
+import path from 'path'
+import { Configuration } from 'webpack'
 
 const config: Configuration = {
-  mode:
-    (process.env.NODE_ENV as "production" | "development" | undefined) ??
-    "development",
-  entry: "./src/index.ts",
+  mode: (process.env.NODE_ENV as 'production' | 'development' | undefined) ?? 'development',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: "babel-loader",
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.(js|jsx)$/,
-        use: "babel-loader",
+        use: 'babel-loader',
         exclude: [/node_modules/, /dist/],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
         exclude: [/node_modules/, /dist/],
       },
       {
@@ -38,22 +35,20 @@ const config: Configuration = {
         test: /\.html$/i,
         loader: 'html-loader',
         exclude: [/node_modules/, /dist/],
-      }
+      },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx"],
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   externals: {
-    react: 'commonjs react'
+    react: 'commonjs react',
   },
   output: {
-    filename: "index.ts",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'index.ts',
+    path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [
-   
-  ],
-};
+  plugins: [],
+}
 
-export default config;
+export default config

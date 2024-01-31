@@ -1,5 +1,3 @@
-import React from 'react';
-declare const WaveGunner: ({ label }: {
-    label: string;
-}) => React.JSX.Element;
-export default WaveGunner;
+import React from 'react'
+declare const WaveGunner: ({ label }: { label: string }) => React.JSX.Element
+export default WaveGunner

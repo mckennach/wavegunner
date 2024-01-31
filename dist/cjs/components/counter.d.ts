@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 type Props = {
-    value?: number;
-};
-declare const MyCounter: ({ value }: Props) => React.JSX.Element;
-export default MyCounter;
+  value?: number
+}
+declare const MyCounter: ({ value }: Props) => React.JSX.Element
+export default MyCounter
