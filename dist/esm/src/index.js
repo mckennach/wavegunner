@@ -1,6 +1,6 @@
-import { WaveGunner } from './components/wavegunner'
+import { WaveGunner } from './components/wavegunner';
 var test = function () {
-  console.log('test')
-}
-export { WaveGunner, test }
+    console.log('test');
+};
+export { WaveGunner, test };
 //# sourceMappingURL=index.js.map
