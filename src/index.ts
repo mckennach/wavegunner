@@ -1,3 +1,3 @@
-import MyCounter from './components/counter'
+import { WaveGunner } from './components/wavegunner'
 
-export { MyCounter }
+export { WaveGunner }
